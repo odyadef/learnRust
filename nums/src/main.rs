@@ -27,6 +27,8 @@ fn main() {
     let xpi = x as f64 * pi;
 
     println!("sum = {sum}\ndifference = {difference}\nproduct = {product}\ntruncated = {truncated}\nremainder = {remainder}");
-    println!("{x} * {pi} = {xpi}");
+    println!("{x} * {pi} = {xpi:.2}");
+
+    println!("{} = {} - {}",x, y, x == y);
 
 }
