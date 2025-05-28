@@ -10,4 +10,10 @@ fn main() {
     e_tup.1 = '🦫';
     e_tup.2 = '🦄';
     println!("{:?}", e_tup);
+
+    let (rooster, beaver, unicorn) = e_tup;
+    println!("{rooster} {beaver} {unicorn}");
+
+    let empty_tup = ();
+    println!("{:?}", empty_tup);
 }
