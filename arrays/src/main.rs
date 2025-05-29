@@ -29,4 +29,7 @@ fn main() {
     c_arr[0] = emoji_arr[4];
     println!("{c_arr:?}");
 
+    let [cr, ct, bd, rr, bv, un] = emoji_arr;
+    println!("crab {cr}\ncat {ct}\nbird {bd}\nrooster {rr}\nbeaver {bv}\nunicorn {un}")
+
 }
