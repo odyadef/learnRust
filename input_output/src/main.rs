@@ -24,4 +24,5 @@ fn main() {
     let y: i32 = second_num.trim().parse().expect("Please, type a number");    
     
     println!("{} + {1} = {sum}", x, y, sum = x + y);
+    println!("{x} - {y} = {dif}", dif = x - y);
 }
