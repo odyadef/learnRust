@@ -1,6 +1,7 @@
 fn main() {
     let arr = [1, 2, 3];
-    let arr1 = [11];
+    let rra = [3, 2, 1];
+    let arr1 = [11, 12, 13];
     let arr2 = [12,];
 
     let arr3: [u8; 3] = [22, 23, 24];
@@ -14,6 +15,18 @@ fn main() {
     println!{"{:?}", arr3};
     println!{"{:?}", arr4};
     println!{"{zero_arr:?}"};
+
+    if arr == arr1 {
+        println!("{:?} == {:?} - {}", arr, arr1, arr == arr1);
+    } else {
+        println!("{:?} == {:?} - {}", arr, arr1, arr == arr1);
+    }
+
+    if arr == rra {
+        println!("{:?} == {:?} - {}", arr, rra, arr == rra);
+    } else {
+        println!("{:?} == {:?} - {}", arr, rra, arr == rra);
+    }
 
     let emoji_arr: [char; 6];
     emoji_arr = ['🦀', '🐈', '🐦', '🐓', '🦫', '🦄'];
