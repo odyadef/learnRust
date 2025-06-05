@@ -22,3 +22,9 @@ fn main() {
         println!("Thank you!");
     }
 }
+
+/*
+&& - AND
+|| - OR
+! - NOT
+*/
