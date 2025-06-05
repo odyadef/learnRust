@@ -1,8 +1,24 @@
-fn main() {
-    let num = 11;
+use std::io;
 
-    if num > 0 {
-        println!("{num} is positive - {}", num > 0);
+fn main() {
+    println!("Type a number: ");
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Cannot read input!");
+    let num:i32 = input.trim().parse().expect("Must be a number");
+    let res = num > 0;
+    if res {
+        println!("{num} is positive");
+    } else {
+        println!("{num} is negative");
     }
-    
+
+    println!("Say hello!");
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Cannot read input!");
+    let hello = input.trim();
+    if hello != "hello" && hello != "Hello" {
+        println!("Please, say hello, not {hello}!");
+    } else {
+        println!("Thank you!");
+    }
 }
