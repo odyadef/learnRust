@@ -8,6 +8,8 @@ fn main() {
     let res = num > 0;
     if res {
         println!("{num} is positive");
+    } else if num == 0 {
+        println!("{num} = 0");
     } else {
         println!("{num} is negative");
     }
