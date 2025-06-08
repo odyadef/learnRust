@@ -8,6 +8,11 @@ fn main() {
     let res = num > 0;
     if res {
         println!("{num} is positive");
+        if num % 2 == 0 {
+            println!("and {num} is even");
+        } else {
+            println!("and {num} is odd");
+        }
     } else if num == 0 {
         println!("{num} = 0");
     } else {
