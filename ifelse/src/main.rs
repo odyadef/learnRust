@@ -19,6 +19,9 @@ fn main() {
         println!("{num} is negative");
     }
 
+    let mark = if res {"!"} else {"?"};
+    println!("{mark}");
+
     println!("Say hello!");
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Cannot read input!");
