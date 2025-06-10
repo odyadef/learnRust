@@ -22,6 +22,13 @@ fn main() {
     let mark = if res {"!"} else {"?"};
     println!("{mark}");
 
+    let abs = if res {
+        num
+    } else {
+        num * (-1)
+    };
+    println!("|{num}| = {abs}");
+
     println!("Say hello!");
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Cannot read input!");
