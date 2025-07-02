@@ -2,7 +2,7 @@ use std::io;
 
 fn main() {
 
-    for i in 0..3 { // for <loop valuable> in start..end 
+    for i in (0..3).rev() { // for <loop valuable> in start..end 
         println!("{}", i)
     }
 
@@ -10,8 +10,8 @@ fn main() {
         println!("check")
     }
 
-    let (start, end) = (3, 5);
-    for x in start..=end {
+    let (start, end) = (3, 15);
+    for x in (start..=end).step_by(3) {
         println!("#{x}");
     }
 
